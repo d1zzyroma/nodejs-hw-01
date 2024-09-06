@@ -16,7 +16,7 @@ export const addOneContact = async () => {
         
         contacts.push(createFakeContact());
 
-        // Записуємо оновлений масив контактів назад у файл
+        
         await fs.writeFile(PATH_DB, JSON.stringify(contacts, null, 2), "utf-8");
         console.log('New contact has been added successfully.');
     } catch (error) {

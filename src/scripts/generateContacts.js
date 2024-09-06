@@ -8,7 +8,7 @@ const generateContacts = async (number) => {
         let contacts = JSON.parse(data);
         
         if (!Array.isArray(contacts)) {
-            contacts = []; // Якщо це не масив, ініціалізуємо порожній масив
+            contacts = []; 
         }
         
         for(let i=0; i < number; i++){
